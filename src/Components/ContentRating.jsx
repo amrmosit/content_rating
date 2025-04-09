@@ -36,6 +36,14 @@ export class ContentRating extends Component {
           Cats are as friendly as dogs! 
         </p>
       </div>
+      <div className='rating-button'>
+        <button className='like-button'>
+          Like ({this.state.likes})
+        </button>
+        <button className='dislike-button'>
+          Dislike ({this.state.dislikes})
+        </button>
+      </div>
       </>
     )
   }
