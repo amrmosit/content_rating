@@ -18,7 +18,7 @@ class ContentRating extends Component {
 export default ContentRating;
 */
 import React, { Component } from 'react'
-import './ClontentRating.css'
+import './ContentRating.css'
 export class ContentRating extends Component {
   constructor(){
     super()
