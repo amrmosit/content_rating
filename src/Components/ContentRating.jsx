@@ -51,7 +51,7 @@ export class ContentRating extends Component {
           Cats are as friendly as dogs! 
         </p>
       </div>
-      <div className='rating-button'>
+      <div className='rating-buttons'>
         <button className='like-button' onClick={this.state.handleLike}>
           Like ({this.state.likes})
         </button>
