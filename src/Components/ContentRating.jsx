@@ -26,18 +26,21 @@ export class ContentRating extends Component {
     this.state = {
       likes:0,
       dislikes:0,
+      totalRatings:0,
 
       // Creating two event handlers
       handleLike:() =>{
         this.setState((prevState) => ({
-          likes:prevState.likes +1
+          likes:prevState.likes +1,
+          totalRatings:prevState.totalRatings+1
         }));
 
       },
 
       handleDislike:() =>{
         this.setState((prevState) =>({
-          dislikes: prevState.dislikes +1
+          dislikes: prevState.dislikes +1,
+          totalRatings:prevState.totalRatings +1
         }));
 
       }
@@ -58,6 +61,9 @@ export class ContentRating extends Component {
         <button className='dislike-button' onClick={this.state.handleDislike}>
           Dislike ({this.state.dislikes})
         </button>
+      </div>
+      <div className='rating-counter'>
+        <p>Total Rating: {this.state.totalRatings}</p>
       </div>
       </>
     )
