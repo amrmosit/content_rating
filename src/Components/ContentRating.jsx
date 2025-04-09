@@ -31,7 +31,11 @@ export class ContentRating extends Component {
   render(){
     return(
       <>
-      <h1>Text Content Rating</h1>
+      <div className='content-rating'>
+        <p>
+          Cats are as friendly as dogs! 
+        </p>
+      </div>
       </>
     )
   }
