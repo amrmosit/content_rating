@@ -18,6 +18,22 @@
   
   .rating-buttons {
     margin-top: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+  }
+  .rating-counter{
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
   .like-button,
