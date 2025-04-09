@@ -25,7 +25,22 @@ export class ContentRating extends Component {
     // Initializing the states of likes and dislikes
     this.state = {
       likes:0,
-      dislikes:0
+      dislikes:0,
+
+      // Creating two event handlers
+      handleLike:() =>{
+        this.setState((prevState) => ({
+          likes:prevState.likes +1
+        }));
+
+      },
+
+      handleDislike:() =>{
+        this.setState((prevState) =>({
+          dislikes: prevState.dislikes +1
+        }));
+
+      }
     };
   }
   render(){
